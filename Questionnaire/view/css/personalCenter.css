@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.nav-img{
+    width: 100px;
+    height: 36px;
+}
+.nav-bg{
+    background-color: blue;
+    margin-bottom: 0;
+}
+.nav-quesBg{
+    background-color: lightslategray;
+}
+.a-font{
+    font-size:16px;
+    color: #fff;
+}
+.li-font{
+    font-size:14px;
+    color: #fff;
+}
+.btn-margin{
+    display: inline-block;
+    margin: 5px auto;
+}
+.h-font{
+    color: lightskyblue;
+}
+.div-bg{
+    background-color: #f5f8fa;
+}
+@media (min-width: 768px) {
+    .d-line{
+        height: 50px;
+    }
+    .span-font-size{
+        font-size: 26px;
+    }
+    .text-align{
+        text-align: right;
+    }
+    .margin-top{
+        margin-top: 30px;
+    }
+    .quesEdit{
+        height: 520px;
+        background-color: lavenderblush;
+    }
+    .nav-margin{
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    .d-line{
+        height: 10px;
+    }
+    .span-font-size{
+        font-size: 18px;
+    }
+    .text-align{
+        text-align: left;
+    }
+    .margin-top{
+        margin-top: 10px;
+    }
+    .quesEdit{
+        background-color: lavenderblush;
+    }
+    .nav-margin{
+        margin: 0;
+    }
+}

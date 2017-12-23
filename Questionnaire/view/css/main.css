@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+#nav{
+    display: flex;
+    display: -webkit-flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#nav>img{
+    width: 130px;
+    height: 48px;
+    align-self:center;
+}
+.navigation{
+    /*display:-webkit-box;*/
+    /*display:-moz-box;*/
+    /*display:-ms-flexbox;*/
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-flow:row wrap;
+    /*justify-content:flex-end*/
+}
+.navigation .mainPage{
+    color: #ff941a;
+    border-bottom: 2px solid #ff941a;
+}
+.navigation a{
+    text-decoration:none;
+    display:block;
+    font-size: 16px;
+    color: #333;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 66px;
+    line-height: 66px;
+}
+.navigation a:hover{
+    color: #ff941a;
+}
+.navBut{
+    display: flex;
+    justify-content: center;
+}
+.navigation button{
+    width: 68px;
+    height: 30px;
+    align-self: center;
+    font-size: 16px;
+    color: #ff941a;
+    border: 1px solid #ff941a;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.navigation button:hover{
+    background-color: #ff941a;
+    color: #fff;
+}
+
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    background-image: url("../image/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+#banner h1{
+    font-size: 54px;
+    color: #dbdbdb;
+    margin-top: 105px;
+}
+#banner .banSheet{
+    font-size: 22px;
+    margin: 20px 0 40px 0;
+}
+#banner .banSheet span{
+    color: #ff941a;
+}
+#banner .butFree{
+    display: inline-block;
+    text-decoration:none;
+    font-size: 22px;
+    padding: 0 46px;
+    line-height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: #ff941a;
+    color: #fff;
+}
+#banner .butFree:hover{
+    background-color: #ff7f00;
+}
+#banner .banFooter{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#banner .banFooter .banFooterBox{
+    display: flex;
+    margin: 0 220px;
+    justify-content: space-between;
+}
+#banner .banFooter .banFooterBox .banFooterLeft{
+    width: 69px;
+    font-size: 26px;
+    color: #dbdbdb;
+    line-height: 80px;
+}
+#banner .banFooter .banFooterBox .banFooterContent{
+    display: flex;
+    width: 608px;
+    align-items: center;
+    font-size: 16px;
+    color: #dbdbdb;
+    margin: 0 10px;
+}
+#banner .banFooter .banFooterBox .banFooterRight{
+    width: 149px;
+    display: flex;
+    align-items: center;
+}
+#banner .banFooterRight a{
+    text-decoration: none;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 24px;
+    border: 1px solid #ff941a;
+    border-radius: 17px;
+    font-size: 16px;
+    color: #ff941a;
+}
+#banner .banFooterRight a:hover{
+    background: #ff941a;
+    color: #fff;
+}
+
+@media (max-width:1199px){
+    #nav{
+        margin: 0 50px;
+    }
+    .navigation{
+        justify-content:space-around
+    }
+    #banner .banFooter .banFooterBox{
+        margin: 0 100px;
+    }
+}
+@media (max-width:992px){
+    #nav{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .navigation{
+        justify-content:space-around
+    }
+    .navigation a{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navigation button{
+        margin: 0 2px;
+    }
+    #banner .banFooter .banFooterBox{
+        margin: 0 50px;
+    }
+}
+@media (max-width:768px){
+    #nav{
+        -webkit-flex-flow:column wrap;
+        margin: 0;
+    }
+    .navigation{
+        -webkit-flex-flow:column wrap;
+        padding:0
+    }
+    .navigation a{
+        text-align:center;
+        padding:5px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .navigation li{
+        border-top:1px solid rgba(255,255,255,0.3);
+        border-bottom:1px solid rgba(0,0,0,0.1)
+    }
+    .navigation li:last-of-type a{
+        border-bottom:none
+    }
+    .navBut{
+        height: 40px;
+    }
+
+    #banner{
+        height: 400px;
+    }
+    #banner h1{
+        font-size: 30px;
+        color: #dbdbdb;
+        margin-top: 50px;
+    }
+    #banner .banSheet{
+        font-size: 14px;
+        margin: 10px 0 20px 0;
+    }
+    #banner .banSheet span{
+        color: #ff941a;
+    }
+    #banner .butFree{
+        font-size: 16px;
+        padding: 0 46px;
+        line-height: 40px;
+        border-radius: 25px;
+    }
+    #banner .banFooter .banFooterBox{
+        margin: 0 10px;
+    }
+    #banner .banFooter .banFooterBox .banFooterLeft{
+        font-size: 18px;
+    }
+    #banner .banFooter .banFooterBox .banFooterContent{
+        font-size: 14px;
+    }
+    #banner .banFooterRight a{
+        width: 90px;
+        height: 28px;
+        line-height: 28px;
+        padding: 0;
+        font-size: 14px;
+    }
+}
+
+

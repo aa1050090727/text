@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./view/css/bootstrap.min.css">
+    <title>登录</title>
+    <style>
+        .loginBg{
+            background-image: url(./view/image/loginBj.jpg);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        @media (min-width: 922px) {
+            .line-height{
+                height: 80px;
+            }
+            .form-height{
+                height:450px;
+            }
+        }
+        @media (min-width: 768px) {
+            .line-height{
+                height: 50px;
+            }
+            .form-height{
+                height:450px;
+            }
+        }
+        @media (max-width: 768px) {
+            .line-height{
+                height: 20px;
+            }
+            .form-height{
+                height:450px;
+            }
+        }
+        .form-border{
+            border-radius: 10px;
+            background-color: white;
+        }
+        .text-font{
+            color: orange;
+        }
+        .p-margin,.margin{
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .form-input{
+            border-radius: 50px;
+            height: 45px;
+        }
+        .btn-radius{
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;;
+        }
+        .a-font{
+            display: inline-block;
+            font-size: 20px;
+            color: orange;
+        }
+        .a-font:hover{
+            color: orangered;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="loginBg">
+    <div class="container">
+        <div class="row line-height"></div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <img src="https://www.wjx.cn/images/register-login/logo.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            <!--登录框div-->
+            <div class="col-lg-6 col-md-6 col-sm-6 form-height form-border">
+                <!--登录文字-->
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11"><h3 class="text-font">问卷星登录</h3></div>
+                </div>
+                <!--输入框-->
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11">
+                        <form action="" name="loginFrom" class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control form-input" id="user" placeholder="用户名/Email/手机">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control form-input" id="Password" placeholder="请输入登录密码">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-7">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">下次自动登录
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5"><a href="#" class="margin">忘记用户名/密码？</a></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-10">
+                                    <button type="button" class="btn btn-warning btn-lg btn-block btn-radius" id="login">登录</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--立即注册-->
+                        <div class="col-sm-10 text-center"><a href="#" class="a-font">立即注册</a></div>
+                        <div class="col-sm-10 text-center"><p class="p-margin">第三方登录</p></div>
+                        <div class="col-sm-4 col-xs-4"></div>
+                        <div class="col-sm-4 col-xs-4 text-center">
+                            <img src="https://image.wjx.cn/images/register-login/qq-hover.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2 col-xs-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <!--按钮-->
+                <button class="btn btn-default">注册</button>
+                <button id="retMain" class="btn btn-default">返回首页</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./view/js/jquery-1.12.3.min.js"></script>
+<script src="./view/js/bootstrap.min.js"></script>
+<script src="./view/js/login.js"></script>
+
+</html>
